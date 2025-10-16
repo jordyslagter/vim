@@ -2,6 +2,14 @@
 
 return {
   {
+    "folke/snacks.nvim",
+    keys = {
+      -- make sure snacks keybinds that we are replacing aren't active
+      { "<leader>e", false },
+      { "<leader>E", false },
+    },
+  },
+  {
     "stevearc/oil.nvim",
     ---@module "oil"
     ---@type oil.SetupOpts
@@ -13,10 +21,31 @@ return {
       skip_confirm_for_simple_edits = true,
     },
     keys = {
-      -- Open Oil in the current directory
-      { "-", "<CMD>Oil<CR>", desc = "Open parent directory (Oil)" },
-      -- Replace LazyVim's file explorer toggle
-      { "<leader>e", "<CMD>Oil<CR>", desc = "File Explorer (Oil)" },
+      -- - = default oil behaviour
+      {
+        "-",
+        function()
+          require("oil").open()
+        end,
+        desc = "File explorer (parent)",
+      },
+      -- leader + e = open root (mirrors default snacks behaviour)
+      {
+        "<leader>e",
+        function()
+          local root = require("lazyvim.util").root()
+          require("oil").open(root)
+        end,
+        desc = "File Explorer (root)",
+      },
+      -- leader + E = open cwd (mirrors default snacks behaviour)
+      {
+        "<leader>E",
+        function()
+          require("oil").open(vim.fn.getcwd())
+        end,
+        desc = "File Explorer (cwd)",
+      },
     },
     config = function(_, opts)
       require("oil").setup(opts)
