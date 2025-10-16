@@ -1,9 +1,22 @@
+-- https://github.com/stevearc/oil.nvim
+
 return {
   {
     "stevearc/oil.nvim",
     ---@module "oil"
     ---@type oil.SetupOpts
-    opts = {},
+    opts = {
+      default_file_explorer = true,
+      view_options = {
+        show_hidden = true,
+      },
+    },
+    keys = {
+      -- Open Oil in the current directory
+      { "-", "<CMD>Oil<CR>", desc = "Open parent directory (Oil)" },
+      -- Replace LazyVim's file explorer toggle
+      { "<leader>e", "<CMD>Oil<CR>", desc = "File Explorer (Oil)" },
+    },
     config = function(_, _)
       require("oil").setup()
     end,
