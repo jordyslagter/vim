@@ -18,8 +18,8 @@ return {
       -- Replace LazyVim's file explorer toggle
       { "<leader>e", "<CMD>Oil<CR>", desc = "File Explorer (Oil)" },
     },
-    config = function(_, _)
-      require("oil").setup()
+    config = function(_, opts)
+      require("oil").setup(opts)
     end,
     -- Optional dependencies
     dependencies = { { "nvim-mini/mini.icons", opts = {} } },
