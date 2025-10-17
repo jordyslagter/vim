@@ -10,6 +10,8 @@ return {
       ensure_installed = {
         -- dart
         "dart-debug-adapter",
+        -- html
+        "emmet-language-server",
       },
     },
   },
