@@ -16,5 +16,6 @@ return {
       { "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>", desc = "Navigate to right pane" },
       { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>", desc = "Navigate to previous pane" },
     },
+    lazy = false,
   },
 }
