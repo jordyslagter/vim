@@ -8,7 +8,6 @@ return {
       "pug",
       "slim",
       "jsx",
-      "tsx",
       "xml",
       "xsl",
       "css",
@@ -18,6 +17,12 @@ return {
       "stylus",
       "handlebars",
       "php",
+      -- personal additions
+      "js",
+      "tsx",
+      "svelte",
+      "vue",
+      "htmx",
     },
   },
 }
