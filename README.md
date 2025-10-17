@@ -1,6 +1,7 @@
 # Jordy Slagter's Neovim config
 
 My own Neovim config based on [LazyVim](https://github.com/LazyVim/LazyVim).
+Designed to be used with my [tmux config](https://github.com/jordyslagter/tmux).
 LazyVim [documentation](https://lazyvim.github.io/installation) <-- available there.
 
 This is a very minimal configuration that basically just configures the needed LSPs,
