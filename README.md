@@ -9,6 +9,12 @@ adds mini.files support and adds rainbow delimiters.
 
 ## Installation
 
+Install the needed requirements:
+
+```bash
+brew install neovim git tree-sitter-cli gcc fzf ripgrep fd lazygit
+```
+
 First, remove the current nvim config.
 
 ```bash
