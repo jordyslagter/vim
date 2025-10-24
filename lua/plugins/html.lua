@@ -1,5 +1,13 @@
 return {
   {
+    "mason-org/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "emmet-language-server",
+      },
+    },
+  },
+  {
     "olrtg/nvim-emmet",
     ft = {
       -- filetypes from: https://github.com/microsoft/vscode-docs/blob/main/docs/languages/emmet.md
