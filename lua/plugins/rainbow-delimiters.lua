@@ -1,6 +1,6 @@
 return {
   {
     "HiPhish/rainbow-delimiters.nvim",
-    event = "BufEnter",
+    event = "VeryLazy",
   },
 }
