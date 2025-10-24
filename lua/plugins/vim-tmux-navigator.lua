@@ -14,7 +14,11 @@ return {
       { "<c-j>", "<cmd><C-U>TmuxNavigateDown<cr>", desc = "Go to Lower Pane" },
       { "<c-k>", "<cmd><C-U>TmuxNavigateUp<cr>", desc = "Go to Upper Pane" },
       { "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>", desc = "Go to Right Pane" },
-      { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>", desc = "Go to Previous Pane" },
+      {
+        "<c-\\>",
+        "<cmd><C-U>TmuxNavigatePrevious<cr>",
+        desc = "Go to Previous Pane",
+      },
     },
     lazy = false,
   },
