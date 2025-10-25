@@ -12,7 +12,7 @@ adds mini.files support and adds rainbow delimiters.
 Install the needed requirements:
 
 ```bash
-brew install neovim git tree-sitter-cli gcc fzf ripgrep fd lazygit
+brew install neovim git gh tree-sitter-cli gcc fzf ripgrep fd lazygit
 ```
 
 First, remove the current nvim config.
@@ -42,3 +42,9 @@ Start Neovim.
 ```bash
 nvim
 ```
+
+### Note on octo.nvim
+
+Sometimes logging in regulary via `gh auth login` might cause permission errors
+when using octo.nvim. To resolve these issues, run
+`gh auth login --scopes read:project` and log in again.
