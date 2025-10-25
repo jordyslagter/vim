@@ -107,7 +107,7 @@ return {
       {
         "<localleader>su",
         "<cmd>FlutterCopyProfilerUrl<CR>",
-        desc = "Activate Dart Dev Tools server (Flutter)",
+        desc = "Copy profiler URL (Flutter)",
         ft = "dart",
       },
       {
