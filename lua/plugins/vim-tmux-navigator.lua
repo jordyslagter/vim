@@ -1,6 +1,7 @@
 return {
   {
     "christoomey/vim-tmux-navigator",
+    event = "VeryLazy",
     cmd = {
       "TmuxNavigateLeft",
       "TmuxNavigateDown",
@@ -20,6 +21,5 @@ return {
         desc = "Go to Previous Pane",
       },
     },
-    lazy = false,
   },
 }
