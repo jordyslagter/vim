@@ -1,5 +1,11 @@
 return {
   {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = { "html", "css", "scss" },
+    },
+  },
+  {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
@@ -9,12 +15,6 @@ return {
         css_variables = {},
         cssmodules_ls = {},
       },
-    },
-  },
-  {
-    "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = { "html", "css", "scss" },
     },
   },
 }
