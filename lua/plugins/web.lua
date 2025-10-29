@@ -14,6 +14,7 @@ return {
         cssls = {},
         css_variables = {},
         cssmodules_ls = {},
+        lemminx = {},
       },
     },
   },
