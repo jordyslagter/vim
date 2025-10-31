@@ -1,4 +1,6 @@
 return {
+  -- depends on the typescript language extra provided by LazyVim
+  { import = "lazyvim.plugins.extras.lang.typescript" },
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {

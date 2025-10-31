@@ -6,6 +6,8 @@ vim.filetype.add({
 })
 
 return {
+  -- depends on the dart language extra provided by LazyVim
+  { import = "lazyvim.plugins.extras.lang.dart" },
   {
     "nvim-flutter/flutter-tools.nvim",
     dependencies = {
