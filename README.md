@@ -43,8 +43,8 @@ Start Neovim.
 nvim
 ```
 
-### Note on octo.nvim
+### Note on snacks gh
 
 Sometimes logging in regulary via `gh auth login` might cause permission errors
-when using octo.nvim. To resolve these issues, run
+when using snacks gh. To resolve these issues, run
 `gh auth login --scopes read:project` and log in again.
