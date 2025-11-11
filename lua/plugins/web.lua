@@ -1,3 +1,5 @@
+-- Adds tools for working with static web files
+
 return {
   -- depends on the typescript language extra provided by LazyVim
   { import = "lazyvim.plugins.extras.lang.typescript" },
@@ -16,6 +18,7 @@ return {
         cssls = {},
         css_variables = {},
         cssmodules_ls = {},
+        -- XML files such as SVGs
         lemminx = {},
       },
     },

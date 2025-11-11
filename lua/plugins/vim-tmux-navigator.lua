@@ -1,6 +1,12 @@
+-- Configures Vim Tmux Navigator, a plugin that allows seamless navigation
+-- between Vim buffers and Tmux panes (when you have it installed on both
+-- sides)
+
 return {
   {
     "christoomey/vim-tmux-navigator",
+    -- Plugin will either load on VeryLazy or on a key press defined in
+    -- keys, so it's fine to load it on VeryLazy here
     event = "VeryLazy",
     cmd = {
       "TmuxNavigateLeft",

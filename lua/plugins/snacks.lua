@@ -1,7 +1,10 @@
+-- Configures Snacks options - the current dashboard and explorer provided with
+-- LazyVim
+
 return {
   {
     "folke/snacks.nvim",
-    -- if LazyVim ever switches away from Snacks, ignore this config
+    -- if LazyVim ever moves away from Snacks, ignore this config
     optional = true,
     dependencies = {
       {
@@ -39,6 +42,9 @@ return {
 
       require("snacks").setup(opts_with_pokemon)
 
+      -- add a key bind that only exists on the Snacks dashboard to open the
+      -- related Pokédex entry, we can't do this via the plugin definition
+      -- as the Pokemon plugin only loads during Snacks startup
       vim.api.nvim_create_autocmd("User", {
         pattern = "SnacksDashboardOpened",
         callback = function()
@@ -51,7 +57,7 @@ return {
               buffer = bufnr,
               noremap = true,
               silent = true,
-              desc = "Show Pokédex",
+              desc = "Toggle Pokédex",
             }
           )
         end,
