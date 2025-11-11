@@ -11,6 +11,7 @@ return {
         "ColaMint/pokemon.nvim",
       },
     },
+    ---@type snacks.Config
     opts = {
       picker = {
         sources = {
