@@ -5,12 +5,14 @@ return {
   { import = "lazyvim.plugins.extras.lang.typescript" },
   {
     "nvim-treesitter/nvim-treesitter",
+    optional = true,
     opts = {
       ensure_installed = { "html", "css", "scss" },
     },
   },
   {
     "neovim/nvim-lspconfig",
+    optional = true,
     opts = {
       servers = {
         html = {},
