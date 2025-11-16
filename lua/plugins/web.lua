@@ -3,6 +3,8 @@
 return {
   -- depends on the typescript language extra provided by LazyVim
   { import = "lazyvim.plugins.extras.lang.typescript" },
+  -- depends on the json language extra provided by LazyVim
+  { import = "lazyvim.plugins.extras.lang.json" },
   {
     "nvim-treesitter/nvim-treesitter",
     optional = true,
