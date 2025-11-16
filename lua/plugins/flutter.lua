@@ -12,8 +12,14 @@ local flutterFileTypes = {
 }
 
 return {
+  -- depends on the java language extra provided by LazyVim
+  { import = "lazyvim.plugins.extras.lang.java" },
+  -- depends on the kotlin language extra provided by LazyVim
+  { import = "lazyvim.plugins.extras.lang.kotlin" },
   -- depends on the dart language extra provided by LazyVim
   { import = "lazyvim.plugins.extras.lang.dart" },
+  -- depends on the yaml language extra provided by LazyVim
+  { import = "lazyvim.plugins.extras.lang.yaml" },
   {
     "nvim-flutter/flutter-tools.nvim",
     dependencies = {
