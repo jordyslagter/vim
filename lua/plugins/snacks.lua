@@ -13,6 +13,9 @@ return {
     },
     ---@type snacks.Config
     opts = {
+      -- disable smooth scroll animations
+      scroll = { enabled = false },
+      -- enable hidden files in the picker
       picker = {
         sources = {
           files = { hidden = true },
