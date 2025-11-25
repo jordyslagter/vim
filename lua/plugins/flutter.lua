@@ -26,6 +26,7 @@ return {
       "nvim-lua/plenary.nvim",
     },
     ft = flutterFileTypes,
+    lazy = true,
     config = true,
     keys = {
       {
