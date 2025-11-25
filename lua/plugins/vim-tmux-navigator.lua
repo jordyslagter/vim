@@ -5,9 +5,7 @@
 return {
   {
     "christoomey/vim-tmux-navigator",
-    -- Plugin will either load on VeryLazy or on a key press defined in
-    -- keys, so it's fine to load it on VeryLazy here
-    event = "VeryLazy",
+    lazy = true,
     cmd = {
       "TmuxNavigateLeft",
       "TmuxNavigateDown",
