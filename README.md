@@ -9,7 +9,7 @@ LazyVim [documentation](https://lazyvim.github.io/installation) <-- available th
 Install the needed requirements:
 
 ```bash
-brew install neovim git gh tree-sitter-cli gcc fzf ripgrep fd lazygit
+brew install neovim git gh tree-sitter-cli gcc fzf ripgrep fd lazygit lazydocker
 ```
 
 First, remove the current nvim config.
