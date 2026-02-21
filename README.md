@@ -8,8 +8,17 @@ LazyVim [documentation](https://lazyvim.github.io/installation) <-- available th
 
 Install the needed requirements:
 
+### MacOS
+
 ```bash
-brew install neovim git gh tree-sitter-cli gcc fzf ripgrep fd lazygit lazydocker
+brew install neovim lua luajit git gh tree-sitter-cli gcc fzf ripgrep fd lazygit lazydocker
+```
+
+### Fedora
+
+```bash
+sudo dnf copr enable dejan/lazygit
+sudo dnf install neovim lua luajit git gh tree-sitter-cli gcc fzf ripgrep fd lazygit
 ```
 
 First, remove the current nvim config.
