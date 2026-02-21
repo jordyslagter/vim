@@ -17,8 +17,8 @@ brew install neovim lua luajit git gh tree-sitter-cli gcc fzf ripgrep fd lazygit
 ### Fedora
 
 ```bash
-sudo dnf copr enable dejan/lazygit
-sudo dnf install neovim lua luajit git gh tree-sitter-cli gcc fzf ripgrep fd lazygit
+dnf copr enable dejan/lazygit
+dnf install neovim lua luajit git gh tree-sitter-cli gcc fzf ripgrep fd lazygit
 ```
 
 First, remove the current nvim config.
