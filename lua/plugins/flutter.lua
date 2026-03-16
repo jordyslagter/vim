@@ -50,7 +50,7 @@ return {
         ft = flutter_file_types,
       },
       {
-        "<localleader>d",
+        "<leader>dc",
         "<cmd>FlutterDebug<CR>",
         desc = "Run current project in debug mode (Flutter)",
         ft = flutter_file_types,
@@ -152,7 +152,7 @@ return {
         ft = flutter_file_types,
       },
       {
-        "<localleader>S",
+        "<leader>cgs",
         "<cmd>FlutterSuper<CR>",
         desc = "Go to super class (Flutter)",
         ft = flutter_file_types,
