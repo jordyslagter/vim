@@ -6,25 +6,27 @@ LazyVim [documentation](https://lazyvim.github.io/installation) <-- available th
 
 ## Installation
 
-Install the needed requirements:
+### Requirements
 
-### MacOS
+#### MacOS
 
-```bash
+```fish
 brew install neovim lua luajit git gh tree-sitter-cli gcc fzf ripgrep fd lazygit lazydocker
 ```
 
-### Fedora
+#### Fedora
 
-```bash
+```fish
 dnf copr enable dejan/lazygit
 dnf install neovim lua luajit git gh tree-sitter-cli gcc fzf ripgrep fd lazygit
 ```
 
+### Copying the configuration
+
 First, remove the current nvim config.
 
-```bash
-mv ~/.config/nvim{,.bak}
+```fish
+mv $XDG_CONFIG_HOME/nvim{,.bak}
 
 mv ~/.local/share/nvim{,.bak}
 mv ~/.local/state/nvim{,.bak}
@@ -33,19 +35,19 @@ mv ~/.cache/nvim{,.bak}
 
 Now clone this config repo.
 
-```bash
-git clone https://github.com/jordyslagter/vim ~/.config/nvim
+```fish
+git clone https://github.com/jordyslagter/vim $XDG_CONFIG_HOME/nvim
 ```
 
 Remove the `.git` folder so that you can make your own repo later.
 
-```bash
-rm -rf ~/.config/nvim/.git
+```fish
+rm -rf $XDG_CONFIG_HOME/nvim/.git
 ```
 
 Start Neovim.
 
-```bash
+```fish
 nvim
 ```
 
@@ -53,4 +55,9 @@ nvim
 
 Sometimes logging in regulary via `gh auth login` might cause permission errors
 when using snacks gh. To resolve these issues, run
-`gh auth login --scopes read:project` and log in again.
+
+```fish
+gh auth login --scopes read:project
+```
+
+and log in again.
