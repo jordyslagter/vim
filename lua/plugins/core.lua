@@ -20,7 +20,7 @@ return {
     optional = true,
     ---@type LazyVimConfig
     opts = {
-      colorscheme = "catppuccin-mocha",
+      colorscheme = "catppuccin-latte",
     },
   },
 }
