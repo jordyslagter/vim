@@ -67,17 +67,14 @@ return {
         pattern = "SnacksDashboardOpened",
         callback = function()
           local bufnr = vim.api.nvim_get_current_buf()
-          vim.keymap.set(
-            "n",
-            "<localleader>p",
-            "<cmd>PokemonTogglePokedex<CR>",
-            {
-              buffer = bufnr,
-              noremap = true,
-              silent = true,
-              desc = "Toggle Pokédex",
-            }
-          )
+          vim.keymap.set("n", "<localleader>p", function()
+            require("pokemon").toggle_pokedex()
+          end, {
+            buffer = bufnr,
+            noremap = true,
+            silent = true,
+            desc = "Toggle Pokédex",
+          })
         end,
       })
     end,
